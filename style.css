@@ -33,9 +33,7 @@ section {
     scroll-margin-top: 85px;
 }
 
-/* =====================================
-   NAVIGATION BAR
-===================================== */
+/* NAVIGATION */
 
 .site-header {
     position: sticky;
@@ -96,9 +94,7 @@ section {
     cursor: pointer;
 }
 
-/* =====================================
-   HOME SECTION
-===================================== */
+/* HOME SECTION */
 
 .hero {
     min-height: 88vh;
@@ -108,16 +104,14 @@ section {
     align-items: center;
     position: relative;
     overflow: hidden;
-
-    background:
-        radial-gradient(
-            ellipse at center,
-            #13213a 0%,
-            #080d18 72%
-        );
+    background: radial-gradient(
+        ellipse at center,
+        #13213a 0%,
+        #080d18 72%
+    );
 }
 
-/* Profile Card */
+/* PROFILE CARD */
 
 .profile-card {
     width: 100%;
@@ -130,8 +124,6 @@ section {
     border-radius: 30px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
-
-/* Top Bar */
 
 .profile-top {
     display: flex;
@@ -159,7 +151,7 @@ section {
     letter-spacing: 2px;
 }
 
-/* Profile Image */
+/* PROFILE PHOTO */
 
 .profile-image-container {
     width: 155px;
@@ -169,15 +161,15 @@ section {
 }
 
 .profile-image {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     border: 4px solid var(--border);
     border-radius: 50%;
     box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
 }
-
-/* Photo Placeholder */
 
 .photo-fallback {
     display: none;
@@ -193,7 +185,7 @@ section {
     font-weight: 700;
 }
 
-/* Learning Badge */
+/* OPEN TO LEARN BADGE */
 
 .open-to-work {
     position: absolute;
@@ -209,7 +201,7 @@ section {
     white-space: nowrap;
 }
 
-/* Name and Role */
+/* NAME AND ROLE */
 
 .profile-info h1 {
     margin-bottom: 6px;
@@ -226,15 +218,13 @@ section {
     font-weight: 400;
 }
 
-/* Divider */
-
 .profile-divider {
     height: 1px;
     margin: 28px 0 18px;
     background: var(--border);
 }
 
-/* Education Details */
+/* EDUCATION DETAILS */
 
 .profile-details {
     display: flex;
@@ -258,7 +248,7 @@ section {
     font-size: 18px;
 }
 
-/* Profile Skills */
+/* PROFILE SKILLS */
 
 .profile-skills {
     display: flex;
@@ -284,7 +274,7 @@ section {
     transform: translateY(-2px);
 }
 
-/* Profile Social Links */
+/* SOCIAL LINKS */
 
 .profile-social-links {
     display: flex;
@@ -304,7 +294,7 @@ section {
     text-decoration: underline;
 }
 
-/* Floating Badges */
+/* FLOATING BADGES */
 
 .floating-badge {
     position: absolute;
@@ -330,9 +320,7 @@ section {
     bottom: 68px;
 }
 
-/* =====================================
-   COMMON SECTION STYLES
-===================================== */
+/* COMMON SECTION STYLES */
 
 .section {
     max-width: 1150px;
@@ -355,9 +343,7 @@ section {
     line-height: 1.25;
 }
 
-/* =====================================
-   ABOUT SECTION
-===================================== */
+/* ABOUT SECTION */
 
 .about-card {
     max-width: 850px;
@@ -378,9 +364,7 @@ section {
     margin-bottom: 0;
 }
 
-/* =====================================
-   SKILLS SECTION
-===================================== */
+/* SKILLS SECTION */
 
 .skills-container {
     display: grid;
@@ -417,9 +401,7 @@ section {
     font-size: 13px;
 }
 
-/* =====================================
-   PROJECTS SECTION
-===================================== */
+/* PROJECTS SECTION */
 
 .projects-container {
     display: grid;
@@ -493,9 +475,7 @@ section {
     font-size: 12px;
 }
 
-/* =====================================
-   EDUCATION SECTION
-===================================== */
+/* EDUCATION SECTION */
 
 .education-card {
     display: flex;
@@ -538,9 +518,7 @@ section {
     color: var(--accent) !important;
 }
 
-/* =====================================
-   CONTACT SECTION
-===================================== */
+/* CONTACT SECTION */
 
 .contact-description {
     max-width: 650px;
@@ -569,9 +547,7 @@ section {
     border-color: var(--accent);
 }
 
-/* =====================================
-   FOOTER
-===================================== */
+/* FOOTER */
 
 footer {
     padding: 23px 18px;
@@ -582,12 +558,9 @@ footer {
     font-size: 13px;
 }
 
-/* =====================================
-   TABLET RESPONSIVE DESIGN
-===================================== */
+/* TABLET RESPONSIVE DESIGN */
 
 @media (max-width: 900px) {
-
     .skills-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -603,15 +576,11 @@ footer {
     .innovation-badge {
         right: -28px;
     }
-
 }
 
-/* =====================================
-   MOBILE RESPONSIVE DESIGN
-===================================== */
+/* MOBILE RESPONSIVE DESIGN */
 
 @media (max-width: 650px) {
-
     .navbar {
         flex-wrap: wrap;
     }
@@ -706,15 +675,11 @@ footer {
     .projects-container {
         grid-template-columns: 1fr;
     }
-
 }
 
-/* =====================================
-   SMALL MOBILE SCREENS
-===================================== */
+/* EXTRA SMALL MOBILE SCREENS */
 
 @media (max-width: 380px) {
-
     .profile-card {
         padding: 23px 15px;
     }
@@ -736,5 +701,4 @@ footer {
     .coding-badge {
         margin-top: 0;
     }
-
 }
